@@ -1,0 +1,230 @@
+
+*{
+   margin: 0;
+   padding: 0;
+   font-family: 'Poppins',sans-serif;
+   box-sizing: border-box;  
+}
+body{
+    background-color: black;
+    color:#FFFF;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/header-image.jpg);
+    background-size:cover ;
+    background-position: center;
+    padding: 10px 8%;
+    
+
+
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.logo{
+    width: 150px;
+    cursor: auto;
+}
+header button{
+    border: 0;
+    background: red;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.language-button{
+    align-items: center;
+    background: transparent;
+    border: 1px solid #FFFF;
+    color: #FFFF;
+    padding: 7px 10px;
+}
+.language-button img{
+    width: 10px;
+    margin-left: 12px;
+
+}
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 100px;
+    
+}
+.header-content h1{
+    
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 600;
+
+
+}
+.header-content h3{
+    margin-top: 10px;
+    font-weight: 400;
+    margin-bottom: 20px;
+   
+}
+.Signup-form{
+    
+    background: #FFFF;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    
+    width: 600px;
+    margin: 20px auto 60px;
+
+}
+.Signup-form input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 15px;
+}
+.Signup-form button{
+    background: #db0001;
+    border: 0;
+    outline: 0;
+    color: #FFFF;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 20px;
+}
+/* header finished */
+
+.features{
+    font-size: 22px;
+}
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 50px 60px;
+}
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-col img{
+    width: 90%;
+}
+.features h2{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.features p{
+    font-size: 18px;
+}
+/*----------------------faq---------------*/
+.faq{
+      padding: 10px 12%;
+      text-align: center;
+      font-size: 18px;
+}
+.faq h2{
+    font-weight: 500;
+    font-size: 40px;
+}
+.Faq-list{
+    margin: 60px auto;
+    max-width: 750px;
+
+}
+.Faq-list li{
+    list-style: none;
+    padding: 3px;
+}
+.Faq-list label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    cursor: pointer;
+    position: relative;
+
+}
+label:hover{
+    background-color: #3d3d3d;
+    
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+
+}
+ input[type="radio"]{
+    display:none;
+}
+.Faq-list .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow:hidden;
+    transition: max-height 0.5s; padding: 0.5s;
+
+}
+.Faq-list input[type="radio"]:checked + label +.content{
+    max-height: 650px;
+    padding: 30px 20px;
+}
+.Faq-list p{
+    font-size: 17px;
+}
+.Faq-list input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+.faq .Signup-form{
+    max-width: 600px;
+    margin: 20px auto 60px;
+
+}
+.faq small{
+    font-size: 13px;
+}
+/*footer*/
+.footer{
+    border-top: 6px solid #333;
+    color: #777;
+}
+.footer h2{
+    padding: 50px 3%;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.footer .col{
+     flex-basis: 25%;
+     margin-bottom: 20px;
+     
+}
+.footer .col a{
+    display: block;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 20;
+    text-align: left;
+}
+
+
